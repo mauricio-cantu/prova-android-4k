@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_condominio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="Condominio"
+        android:inputType="textPersonName" />
+
+    <CheckBox
+        android:id="@+id/cb_elevador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="Elevador"
+        android:layout_below="@+id/et_condominio"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:id="@+id/sp_aps"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_below="@+id/cb_elevador"
+        android:layout_toEndOf="@+id/tv_qtdaps" />
+
+    <TextView
+        android:id="@+id/tv_qtdaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qtd. Apartamentos"
+        android:textSize="20sp"
+        android:layout_above="@+id/et_areatotal"
+        android:layout_alignEnd="@+id/cb_elevador" />
+
+    <EditText
+        android:id="@+id/et_areatotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_condominio"
+        android:layout_below="@+id/sp_aps"
+        android:layout_marginTop="101dp"
+        android:ems="10"
+        android:hint="Area total"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/bt_acao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/et_areatotal"
+        android:layout_toStartOf="@+id/sp_aps" />
+
+    <Button
+        android:id="@+id/bt_deletar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/cb_elevador"
+        android:layout_marginBottom="21dp"
+        android:background="@android:color/holo_red_light"
+        android:elevation="1dp"
+        android:text="deletar"
+        android:visibility="invisible" />
+</RelativeLayout>
