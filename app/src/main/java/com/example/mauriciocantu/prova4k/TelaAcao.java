@@ -64,8 +64,6 @@ public class TelaAcao extends AppCompatActivity {
 
                         condominio.setQtApartamentos(spAps.getSelectedItem().toString());
 
-//                      condominio.setPosicaoItemSpinner(spAps.getSelectedItemPosition());
-
                         boolean salvou = condominioDAO.salvar(condominio);
 
                         if (salvou){
@@ -112,8 +110,6 @@ public class TelaAcao extends AppCompatActivity {
                         }
 
                         condominio.setQtApartamentos(spAps.getSelectedItem().toString());
-
-//                      condominio.setPosicaoItemSpinner(spAps.getSelectedItemPosition());
 
                         boolean editou = condominioDAO.editar(condominio);
 
