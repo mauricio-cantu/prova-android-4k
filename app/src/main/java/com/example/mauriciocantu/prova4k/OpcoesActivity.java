@@ -38,5 +38,6 @@ public class OpcoesActivity extends ListActivity {
             Intent telaLista = new Intent(OpcoesActivity.this, ListaActivity.class);
             startActivity(telaLista);
         }
+        //testando update
     }
 }
